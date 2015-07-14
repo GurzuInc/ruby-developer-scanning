@@ -7,18 +7,18 @@ class Mail
 		@password = password || 'rubyrubyruby'
 	end
 
-	def message(subjectm body='')
+	def message(subject = '', body='')
 		@message = %q(
-		  From: Jyaasa Technologies <career@jyaasa.com>
-		  To: Ganesh Kunwar <ganesh@jyaasa.com>
-		  Subject: This is from my terminal
-		  Hi, I am learning sending email from the terminal.
-		 )
-	end
+      From: Jyaasa Technologies <career@jyaasa.com>
+      To: Ganesh Kunwar <ganesh@jyaasa.com>
+      Subject: This is from my terminal
+      Hi, I am learning sending email from the terminal.
+      )
+end
 
-	def send_message
-		require 'net/smtp'
-		smtp = Net::SMTP.new('smtp.gmail.com',587)
+def send_message
+  require 'net/smtp'
+  smtp = Net::SMTP.new('smtp.gmail.com',587)
 		smtp.enable_starttls #beacuse gmail requires this encryption
 		smtp.start('gmail.com', @email, @password, :login ) do |s|
 			s.send_message @message, 'ganesh@jyaasa.com', 'gkunwar09@gmail.com'
