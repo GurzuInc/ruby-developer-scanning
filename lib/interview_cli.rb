@@ -3,7 +3,7 @@ class InterviewCLI < Thor
   def start    
     name = ask "\nEnter your full name.".green 
     email = ask( "\nEnter your email address to get back to you. ".green) { |q| q.echo = '*' }
-    user = User.create(name,email)
+    user = User.new(name,email)
     interview = Interview.new(user)
     interview.start
     interview.submit
