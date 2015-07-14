@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.license       = 'MIT'
   s.executables << 'interview'
   s.add_runtime_dependency 'thor', '~> 0.19.1'
-  s.add_runtime_dependency 'highline', '~> 1.7.2'
+  s.add_runtime_dependency 'highline', '~> 1.7', '>= 1.7.2'
   s.add_runtime_dependency 'colorize', '~> 0.7.7'
-  s.add_runtime_dependency 'rest_client', '~> 1.8.3'
+  s.add_runtime_dependency 'rest_client', '~> 1.8', '>= 1.8.3'
 end
