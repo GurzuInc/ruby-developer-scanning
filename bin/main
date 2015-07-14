@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'thor'
 require "highline/import"
 require "yaml"
