@@ -1,0 +1,36 @@
+basic question:
+  - question: Difference between symbol and string in rails.
+  - question: Explain how (almost) everything is an object in Ruby
+  - question: What’s your favorite testing tool?
+  - question: What are Gems and which are some of your favorites? 
+  - question: What is a class? 
+  - question: What is the difference between a class and a module? 
+  - question: What is an object? 
+  - question: How would you declare and use a constructor in Ruby? 
+  - question: How and when would you declare a Global Variable? 
+  - question: How would you create getter and setter methods in Ruby? 
+  - question: Describe the difference between class and instance variables? 
+  - question: Explain some of the looping structures available in Ruby? 
+  - question: Explain the difference between a has_one and belongs_to association
+  - question: Explain a polymorphic association 
+
+medium hard question:
+  - question: What is a Proc? 
+  - question: What is a lambda? 
+  - question: What are the three levels of method access control for classes and what do they signify? What do they imply about the method? 
+  - question: Explain what functional testing is 
+  - question: There are three ways to invoke a method in ruby. Can you give me at least two? 
+  - question: Explain this ruby idiom a ||= b 
+  - question: What does self mean? 
+  - question: What is unit testing (in classical terms)? What is the primary technique when writing a test?
+  - question: What is your favorite api resource for ruby? 
+  - question: What is the difference between Ruby’s Hash and ActiveSupport’s HashWithIndifferentAccess? 
+  - question: What is CSRF? How does Rails protect against it? 
+  - question: How would you define a Person model so that any Person can be assigned as the parent of another Person (as demonstrated in the Rails console below)? What columns would you need to define in the migration creating the table for Person? 
+  - question: Any other type of beer specified should generate a 404 status code. 
+  - question: A Rails-specific question how Date.today differs from Date.current? 
+  - question: What is database transactions and how it is represented in Rails. 
+  - question: Tell me about your development environment. 
+
+practical question:
+  - question: Write a ruby program that gets the headlines for the users displayed from todays edition of ekantipur.com
