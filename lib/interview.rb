@@ -21,12 +21,12 @@ class Interview
 
   def submit
     @formator.format(self)
-    send_to_jyaasa
+    file_path = "#{Dir.pwd}/tmp/#{@user.name}.txt"
+    Utils.write(file_path,@formator.formatted_content)
+    Utils.send_to_jyaasa(file_path,@user)
   end
 
-  def send_to_jyaasa
-    say @formator.formatted_content.blue
-  end
+  
 
   def show
     @formator.formatted_content

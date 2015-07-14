@@ -7,6 +7,7 @@ class QuestionSet
   end
 
   def fetch
+    binding.pry
     categories = @questions_pool.keys
     categories.each { |category| 
       @questions +=Question.build(@questions_pool[category].sample(1))

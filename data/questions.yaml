@@ -11,7 +11,7 @@ Simple questions:
   - How would you create getter and setter methods in Ruby?
   - Describe the difference between class and instance variables?
   - Explain some of the looping structures available in Ruby?
-  - Explain the difference between a has_one and belongs_to association:
+  - Explain the difference between a has_one and belongs_to association
   - Explain a polymorphic association
 
 
@@ -53,7 +53,7 @@ MEDIUM/HARD QUESTIONS:
       end
 
   - |
-      Create a route to be able to display pages with different information about different types of beer. The route should recognize URL paths like /beer/<beer_type> and should use the same controller action for each type of beer with the actually beer type passed into the controller action as a parameter. The valid beer types are:
+      Create a route to be able to display pages with different information about different types of beer. The route should recognize URL paths like /beer/<beer_type> and should use the same controller action for each type of beer with the actually beer type passed into the controller action as a parameter. The valid beer types are as follows
       IPA
       brown_ale
       pilsner

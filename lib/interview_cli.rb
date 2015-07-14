@@ -7,6 +7,6 @@ class InterviewCLI < Thor
     interview = Interview.new(user)
     interview.start
     interview.submit
-    # say interview.show
+    Utils.clear_tmp
   end  
 end
