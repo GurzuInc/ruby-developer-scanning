@@ -9,7 +9,7 @@ class QuestionSet
   def fetch
     categories = @questions_pool.keys
     categories.each { |category| 
-      @questions +=Question.build(@questions_pool[category].sample(1))
+      @questions +=Question.build(@questions_pool[category].sample(5))
      }
   end
 

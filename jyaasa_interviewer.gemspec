@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'jyaasa_interviewer'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = '2015-07-15'
   s.summary     = "Command line utility for remote interview"
   s.description = "Command line utility for remote interview at Jyaasa Technologies"
