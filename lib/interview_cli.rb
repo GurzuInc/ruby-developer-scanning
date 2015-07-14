@@ -1,3 +1,5 @@
+DATA_FILE = File.expand_path("../..", __FILE__)
+
 class InterviewCLI < Thor
   desc "start", "start the interview"
   def start    

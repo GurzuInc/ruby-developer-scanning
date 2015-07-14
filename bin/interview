@@ -2,16 +2,15 @@
 require 'thor'
 require "highline/import"
 require "yaml"
-require "pry"
 require "colorize"
 require 'rest-client'
 require 'fileutils'
-require 'lib/interview_cli'
-require 'lib/user'
-require 'lib/interview'
-require 'lib/question'
-require 'lib/question_set'
-require 'lib/answer_formator'
-require 'lib/utils'
+require 'interview_cli'
+require 'user'
+require 'interview'
+require 'question'
+require 'question_set'
+require 'answer_formator'
+require 'utils'
 
 InterviewCLI.start

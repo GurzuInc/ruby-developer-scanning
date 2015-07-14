@@ -20,6 +20,7 @@ class Interview
   end
 
   def submit
+    say "Preparing to send test to Jyaasa Technologies".green
     @formator.format(self)
     file_path = "#{Dir.pwd}/tmp/#{@user.name}.txt"
     Utils.write(file_path,@formator.formatted_content)

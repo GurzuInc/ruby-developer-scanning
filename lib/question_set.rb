@@ -15,7 +15,7 @@ class QuestionSet
 
 private
   def load_pool
-    YAML.load(File.read('./data/questions.yaml'))
+    YAML.load(File.read("#{DATA_FILE}/data/questions.yaml"))
   end
 
 end

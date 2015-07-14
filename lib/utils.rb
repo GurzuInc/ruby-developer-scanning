@@ -16,7 +16,7 @@ class Utils
         response.return!(request, result, &block)
       end
     end
-    say "You response has been emailed to Jyaasa Technologies".green
+    say "You test has been emailed to Jyaasa Technologies".green
   end
 
   def self.clear_tmp
