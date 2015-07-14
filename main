@@ -1,0 +1,12 @@
+require 'thor'
+require "highline/import"
+require "yaml"
+require "pry"
+require "colorize"
+require_relative './lib/interview_cli'
+require_relative './lib/user'
+require_relative './lib/interview'
+require_relative './lib/question'
+require_relative './lib/question_set'
+
+InterviewCLI.start
