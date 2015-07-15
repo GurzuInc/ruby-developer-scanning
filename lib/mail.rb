@@ -1,5 +1,5 @@
 class Mail
-	attr_accessor :email, :password, :message
+	attr_accessor :email, :password, :message, :subject
 	# EMAIL = 'talktestruby@gmail.com'
 	# PASSWORD = 'rubyrubyruby'
 	def initialize(email = nil, password = nil)
@@ -8,24 +8,16 @@ class Mail
 	end
 
 	def message(subject = '', body='')
-		@message = %q(
-      From: Jyaasa Technologies <career@jyaasa.com>
-      To: Ganesh Kunwar <ganesh@jyaasa.com>
-      Subject: This is from my terminal
-      Hi, I am learning sending email from the terminal.
-      )
-end
+		@subject = "Test questions"
+    @message =  "Here are the answer of questions </br>" + body
+  end
 
-def send_message
-  require 'net/smtp'
-  smtp = Net::SMTP.new('smtp.gmail.com',587)
+  def send_message
+  	require 'net/smtp'
+  	smtp = Net::SMTP.new('smtp.gmail.com',587)
 		smtp.enable_starttls #beacuse gmail requires this encryption
 		smtp.start('gmail.com', @email, @password, :login ) do |s|
 			s.send_message @message, 'ganesh@jyaasa.com', 'gkunwar09@gmail.com'
 		end
 	end
 end
-
-mail = Mail.new
-mail.message
-mail.send_message
