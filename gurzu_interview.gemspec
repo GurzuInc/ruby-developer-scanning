@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'jyaasa_interviewer'
+  s.name        = 'gurzu_interview'
   s.version     = '0.1.2'
   s.date        = '2015-07-15'
   s.summary     = "Command line utility for remote interview"
