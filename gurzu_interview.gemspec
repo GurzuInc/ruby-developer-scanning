@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'gurzu_interview'
-  s.version     = '0.1.2'
+  s.version     = '0.1.3'
   s.date        = '2015-07-15'
   s.summary     = "Command line utility for remote interview"
   s.description = "Command line utility for remote interview at Jyaasa Technologies"
@@ -16,4 +16,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'colorize', '~> 0.7.7'
   s.add_runtime_dependency 'rest-client', '~> 2.1'
   s.post_install_message = "\e[31mType 'interview start' to start your Interview \e[0m"
+  s.required_ruby_version = '>= 3.3.0'
+  s.add_dependency 'railties', '~> 7.1'
 end
